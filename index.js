@@ -7,6 +7,11 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
     {
         type: "input",
+        name: "Name",
+        message: "What is your name?"
+    },
+    {
+        type: "input",
         name: "Username",
         message: "What is your Github username?",
     },
@@ -29,17 +34,17 @@ const questions = [
         type: "checkbox",
         name: "License",
         message: "Which type of license will you be using?",
-        choices: ["MIT", "Apache License 2.0", "GNU General Public License v3.0", "GNU General Public License v2.0", "BSD 2-Clause", "BSD 3-Clause", "Boost 1.0", "Creative Commons 1.0", "Eclipse Public 2.0", "Mozilla Public 2.0", "The Unlicense"]
+        choices: ["Press <space> to make your selection", "MIT License", "Apache License 2.0", "GNU General Public License v3.0", "GNU General Public License v2.0", "BSD 2-Clause License", "BSD 3-Clause License", "Boost 1.0 License", "Creative Commons 1.0 License", "Eclipse Public 2.0 License", "Mozilla Public 2.0 License", "The Unlicense"]
     },
     {
         type: "input",
-        name: "Commands",
+        name: "Install",
         message: "What command should be run to install dependancies?"
     },
     {
         type: "input",
         name: "Tests",
-        message: "What command should be run to initiate tests?"
+        message: "What should be run to initiate tests?"
     },
     {
         type: "input",
