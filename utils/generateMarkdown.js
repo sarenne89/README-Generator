@@ -1,8 +1,8 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  console.log(data)
   return `# ${data.Title}
 by ${data.Username}
+## This file was generated using the README-Generator.
 ## Table of contents
 - [Description](#description)
 - [License](#License)
