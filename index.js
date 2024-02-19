@@ -34,12 +34,17 @@ const questions = [
         type: "checkbox",
         name: "License",
         message: "Which type of license will you be using?",
-        choices: ["Press <space> to make your selection", "MIT License", "Apache License 2.0", "GNU General Public License v3.0", "GNU General Public License v2.0", "BSD 2-Clause License", "BSD 3-Clause License", "Boost 1.0 License", "Creative Commons 1.0 License", "Eclipse Public 2.0 License", "Mozilla Public 2.0 License", "The Unlicense"]
+        choices: ["Press <space> to make your selection", "MIT", "Apache2.0", "GNU3.0", "GNU2.0", "BSD2", "BSD3", "Boost1.0", "CreativeCommons1.0", "Eclipse2.0", "Mozilla2.0", "Unlicense"]
     },
     {
         type: "input",
         name: "Install",
         message: "What command should be run to install dependancies?"
+    },
+    {
+        type: "input",
+        name: "Usage",
+        message: "How should the user use this software?"
     },
     {
         type: "input",
